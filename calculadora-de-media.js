@@ -9,8 +9,9 @@ const nota4 = input.question('Informe nota 4 ')
 const nota5 = input.question('Informe nota 5 ')
 const nota6 = input.question('Informe nota 6 ')
 
-const media = (nota1 + nota2 + nota3 + nota4 + nota5 + nota6) / 6
+const media = parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parseFloat(nota4) + parseFloat(nota5) + parseFloat(nota6) / 6
 
+console.log(media.toFixed(2))
 
 if (media >= 7){
     console.log("Aprovada")
