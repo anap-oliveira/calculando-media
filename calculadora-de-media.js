@@ -13,12 +13,14 @@ const media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3) + parse
 
 console.log(media.toFixed(2))
 
+console.log(`==== Sua média foi: ${media.toFixed(1)} ====`)
+
 if (media >= 7){
-    console.log("Parabéns! Você é desenrolada e está aprovada!")
+    console.log("Parabéns! Você foi aprovada!")
     } else if (media < 5){
-        console.log("Eita, mana! Deu ruim, você foi reprovada.")
+        console.log("Você foi reprovada, não foi dessa vez.")
     } else {
-        console.log("Olhaí, ainda resta uma chance! Você está em recuperacao ")
+        console.log("Se esforce mais um pouco, você está em recuperacao. ")
         }
 
 
